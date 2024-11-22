@@ -3,13 +3,13 @@
 int	main(void)
 {	
 	printf ("MY: %i\n", ft_printf("%: %: 1 %% 2 % 3 %"));
-	printf ("OR: %i\n",    printf("%: %: 1 %% 2 % 3 %"));
+	printf ("OR: %i\n",    printf("%%: %%: 1 %% 2 %% 3 %%"));
 printf ("  MY: %i\n", ft_printf("%c	", 'c'));
 printf ("  OR: %i\n",    printf("%c	", 'c'));
 	printf ("  MY: %i\n", ft_printf(" p %p	", (void *)321321321321321));
 	printf ("  OR: %i\n",    printf(" p %p	", (void *)321321321321321));
 printf ("  MY: %i\n", ft_printf(" p %p ", 0));
-printf ("  OR: %i\n",    printf(" p %p ", 0));
+printf ("  OR: %i\n",    printf(" p %p ", (void*)0));
 	printf ("  MY: %i\n", ft_printf("  d %d	", 31313131));
 	printf ("  OR: %i\n",    printf("  d %d	", 31313131));
 printf ("  MY: %i\n", ft_printf("   s %s	", "string"));
